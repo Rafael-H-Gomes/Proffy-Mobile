@@ -1,10 +1,34 @@
 import React from 'react';
-import { View } from "react-native";
+import { View, ScrollView, Text } from "react-native";
+
+import PageHeader from '../../components/Pageheader';
+import TeacherItem from '../../components/TeacherItem';
 
 import styles from './styles';
 
 function TeacherList() {
-    return <View style={styles.container} />
+    return (
+        <View style={styles.container}>
+            <PageHeader title="Proffys disponíveis" >
+                <Text>asdsadasd</Text>
+            </PageHeader>
+
+            <ScrollView
+                style={styles.teacherList}
+                contentContainerStyle={{
+                    paddingHorizontal: 16,
+                    paddingBottom: 16,
+                }}
+            >
+                <TeacherItem />
+                <TeacherItem />
+                <TeacherItem />
+                <TeacherItem />
+                <TeacherItem />
+                <TeacherItem />
+            </ScrollView>
+        </View>
+    );
 }
 
 export default TeacherList;
