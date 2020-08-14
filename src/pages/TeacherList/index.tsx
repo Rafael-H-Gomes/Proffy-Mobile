@@ -21,7 +21,7 @@ function TeacherList() {
                 title="Proffys disponíveis" 
                 headerRight={(
                     <BorderlessButton onPress={handleToggleFiltersVisible}>
-                        <Feather name="filter" size={20} color="#FFF" />
+                        <Feather name="filter" size={20} color="#04D361" />
                     </BorderlessButton>
                 )} >
             { isFilterVisible && (
